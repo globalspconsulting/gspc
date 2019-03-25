@@ -23,7 +23,7 @@ class App extends Component {
           {/*</a>*/}
         </header>
         <footer>
-          Copyrights @Global SP Consulting
+
         </footer>
       </div>
     );
