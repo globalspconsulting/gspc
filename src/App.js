@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.png';
 import './App.css';
 
 class App extends Component {
@@ -17,15 +16,21 @@ class App extends Component {
                         </ul>
                     </div>
                 </header>
-                <article className="content">
-                    <div className="container">
-                        <h1>
-                            Global SP Consulting
-                        </h1>
-                        <p>Connecting education to technology </p>
-                        <p> Site under construction </p>
+                <main>
+                    <div className="intro">
+                    <h1 className="headline">
+                        Global SP Consulting
+                    </h1>
+                    <p className="tagline">
+                        We connect from education to technology.
+                    </p>
                     </div>
-                </article>
+                    <div className="subintro">
+                        <div className="subdesc"><a  href="#">START YOUR PROJECT WITH US</a></div>
+                        <div className="subdesc"><a  href="#">HIRE PART-TIME/REMOTE ENGINEER</a></div>
+                        <div className="subdesc"><a  href="#">CONSULTATION ON CAREER</a></div>
+                    </div>
+                </main>
                 <footer className="footer">
                     <p>Posted by: Pooja Upadhyay Email us: <a href="mailto:globalspconsulting2019@gmail.com">
                         globalspconsulting2019@gmail.com</a>.</p>

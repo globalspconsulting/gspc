@@ -4,10 +4,9 @@
 }
 
 .header {
-    background-color: black;
+    background-color: #185771fa;
     height: 60px;
     width: 100%;
-    position: fixed;
 }
 
 ul#menu {
@@ -59,8 +58,66 @@ h1 {
     padding-top: 10%;
 }
 
+body {
+    width: auto;
+    background-image: url("images/bg6.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.intro {
+    width: 60%;
+}
+
+.subintro {
+    width: 40%;
+    float: right;
+    margin-top: 30px;
+}
+
+.subdesc {
+    font-size: 1.5em;
+    font-weight: 200;
+    line-height: 1.333em;
+    margin: 0.12em 0 0 0;
+    color: #000000a6;
+    width: 77.777777778%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.headline {
+    font-size: 6em;
+    font-weight: 400;
+    color: black;
+    letter-spacing: -0.042em;
+    line-height: 0.94em;
+    padding-left: 20%;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0px;
+}
+
+.tagline {
+    padding-left: 20%;
+    font-size: 1.7em;
+    font-weight: 200;
+    line-height: 1.333em;
+    margin: 0.12em 0 0 0;
+    color: #000000a6;
+    width: 77.777777778%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+div.subdesc a {
+    color: #185771fa;
+    text-decoration: none;
+}
+
+div.subdesc a:hover {
+    color: #07222ded;
+}
+
 footer {
-    background-color: black;
+    background-color: #185771fa;
     bottom: 0;
     width: 100%;
     height: 40px;
