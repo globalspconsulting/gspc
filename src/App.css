@@ -48,21 +48,22 @@ li.site_name a:hover, li.link a:hover {
     color: cadetblue;
 }
 
-.content {
-    width: 60%;
-    margin: 0 auto;
-    padding: 10px;
-}
-
 h1 {
     padding-top: 10%;
 }
 
 body {
-    width: auto;
     background-image: url("images/bg6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     font-family: sans-serif;
+    height:100%;
+    width:100%;
 }
 
 .intro {
@@ -139,21 +140,43 @@ footer a {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
         text-align: center;
     }
-
     li.link {
         text-align: center;
         width: auto;
     }
-
-    .content {
+    .intro {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-        text-align: center;
-        padding-top: 20%;
+    }
+    h1.headline{    font-size: 2em;
+        width: 100%;
+        font-weight: 300;
+        color: black;
+        text-align: start;
+        margin: 0px;
+        padding-left: 0%;
+        font-family: "Times New Roman", Times, serif;
     }
 
+    .tagline {
+        padding-left: 1%;
+        font-size: 1.5em;
+        font-weight: 100;
+        color: #000000a6;
+        width: 100%;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .subintro {
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+    }
     .footer {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
         text-align: center;
+    }
+    p {
+        word-break: break-word;
     }
 }
 

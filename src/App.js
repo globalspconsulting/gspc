@@ -22,7 +22,7 @@ class App extends Component {
                         Global SP Consulting
                     </h1>
                     <p className="tagline">
-                        We connect from education to technology.
+                        We connect from education to technology...
                     </p>
                     </div>
                     <div className="subintro">
