@@ -2,6 +2,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .container {
     width: 100%;
     padding-right: 10%;
@@ -19,52 +20,51 @@
     background-size: cover;
 }
 
-.bg-header {
+.responsive-image {
+    height: auto;
+    width: 100%;
+}
+
+.header {
+    overflow: hidden;
     background-color: #185771fa;
-    height: 60px;
-    width: 100%;
-}
-
-ul#menu {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    padding: 20px 10px;
+    padding-left: 20%;
+    padding-right: 10%;
     position: fixed;
+    width: 100%;
     z-index: 1000;
+    font-family: "Times New Roman", Times, serif;
 }
 
-ul#menu li {
+.header a {
     float: left;
-    padding: 20px 0 0 0;
-    height: 60px;
-    box-sizing: border-box;
-    font-weight: 600;
-}
-
-li.site_name {
-    width: 60%;
-    text-align: left;
-}
-
-li.link {
-    width: 10%;
+    color: white;
     text-align: center;
-}
-
-li.site_name a {
-    color: white;
+    padding: 12px;
     text-decoration: none;
-    padding-left: 30%;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 4px;
 }
 
-li.link a {
-    color: white;
-    text-decoration: none;
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-li.site_name a:hover, li.link a:hover {
+.header a:hover {
+    background-color: #af9a05;
+    color: black;
+}
+
+.header a.active {
+    background-color: dodgerblue;
     color: cadetblue;
+}
+
+.header-right {
+    float: right;
 }
 
 .intro {
@@ -127,47 +127,53 @@ li.site_name a:hover, li.link a:hover {
     letter-spacing: -0.030em;
     font-family: "Times New Roman", Times, serif;
     margin: 0px;
-    margin-left: -200px;
+    margin: 0 0 0 -350px;
 }
 
 .tagline {
     font-size: 1.7em;
     font-weight: 200;
-    margin: 0.12em 0 0 0;
+    margin: .12em 0 0 -100px;
     color: #000000a6;
     width: 77.777777778%;
     font-family: "Times New Roman", Times, serif;
 }
 
-h2{
+h2 {
     font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     font-weight: 300;
     color: black;
     letter-spacing: -0.030em;
 }
+
 hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
 }
+
 div.light {
     border-color: #080808;
 }
 
-#icon{
+#icon {
     text-shadow: 1px 1px 1px #ccc;
     font-size: 5.0em;
 }
-.icon-padding{
+
+.icon-padding {
     padding-left: 15%;
 }
-.icon-desc-padding{
+
+.icon-desc-padding {
     padding-left: 30%;
 }
-.icon-para-padding{
+
+.icon-para-padding {
     padding-left: 20%;
 }
+
 .icon-desc {
     font-size: 1.7em;
     font-weight: 600;
@@ -176,6 +182,7 @@ div.light {
     width: 77.777777778%;
     font-family: "Times New Roman", Times, serif;
 }
+
 .icon-para {
     font-size: 1.3em;
     font-weight: 200;
@@ -184,19 +191,24 @@ div.light {
     /* width: 100%; */
     font-family: "Times New Roman", Times, serif;
 }
-.sp-icon-color{
+
+.sp-icon-color {
     color: #af9a05;
 }
-.sp-padding-bottom-5{
+
+.sp-padding-bottom-5 {
     padding-bottom: 5%;
 }
-.sp-padding-bottom-25{
-    padding-bottom:25px;
+
+.sp-padding-bottom-25 {
+    padding-bottom: 25px;
 }
-.sp-tech-font{
+
+.sp-tech-font {
     font-weight: 600;
 }
-.sp-about-bg{
+
+.sp-about-bg {
     background-image: url("images/aboutus.jpg");
     background-repeat: no-repeat;
     text-align: center;
@@ -205,7 +217,8 @@ div.light {
     width: 100%;
     background-size: cover;
 }
-.sp-about-text{
+
+.sp-about-text {
     font-size: 1.7em;
     font-weight: 400;
     margin: 0.12em 0 0 0;
@@ -213,22 +226,23 @@ div.light {
     font-family: "Times New Roman", Times, serif;
     width: 30%;
     margin-left: 30%;
-    padding-top: 70px;
+    padding-top: 90px;
     text-align: left;
 }
-.sp-contact-text{
-height: 250px;
-}
-#sp-contact-icon{
+
+#sp-contact-icon {
     text-shadow: 1px 1px 1px #ccc;
     font-size: 4.0em;
     color: #af9a05;
 }
-.sp-contact-text{
+
+.sp-contact-text {
     color: black;
     font-weight: 600;
     padding-top: 20px;
+    height: 250px;
 }
+
 footer {
     background-color: #185771fa;
     bottom: 0;
@@ -244,6 +258,90 @@ footer {
 
 footer a {
     color: white;
+}
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+
+    #headerwrap {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        text-align: center;
+    }
+
+    .intro {
+        width: auto;
+        float: right;
+        padding-top: 2%;
+    }
+
+    .headline {
+        padding-top: 10%;
+        font-size: 2.5em;
+        font-weight: 600;
+        color: black;
+        letter-spacing: -0.030em;
+        font-family: "Times New Roman", Times, serif;
+        padding-left: 60%;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+        font-weight: 200;
+        color: #000000a6;
+        font-family: "Times New Roman", Times, serif;
+        width: 100%;
+    }
+
+    .subintro {
+        width: auto;
+        float: left;
+    }
+
+    .sp-display-left {
+        position: absolute;
+        -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+        -ms-transform: translate(-0%, -50%);
+        padding: 10px;
+        margin-top: 300px;
+        padding-left: 6%;
+    }
+
+    .sp-about-text {
+        font-size: 1.1em;
+        font-weight: 400;
+        /* margin: 0.1em 0 0 0; */
+        color: #000000f2;
+        font-family: "Times New Roman", Times, serif;
+        width: 80%;
+        margin-left: 5%;
+        padding-top: 150px;
+        text-align: left;
+    }
+
+    .sp-contact-text {
+        height: 60px;
+        height: 100px;
+    }
+
+    .header {
+        position: relative !important;
+    }
+
+    .header a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .header-right {
+        float: none;
+    }
+
+    #services {
+        margin-top: auto;
+    }
 }
 
 @keyframes App-logo-spin {

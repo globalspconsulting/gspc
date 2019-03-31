@@ -5,16 +5,18 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <header id="headerwrap">
+                <header  className="responsive-image">
                     <div>
-                        <ul id="menu" className="bg-header">
-                            <li className="site_name"><a href="index.html">GSPC</a></li>
-                            <li className="link"><a href="#services">&raquo; Services</a></li>
-                            <li className="link"><a href="#techstack">&raquo; Tech stack</a></li>
-                            <li className="link"><a href="#aboutus">&raquo; About us</a></li>
-                            <li className="link"><a href="#contactus">&raquo; Contact us</a></li>
-                        </ul>
-                        <div className="row">
+                        <div className="header">
+                            <a href="index.html" className="logo">GSPC</a>
+                            <div className="header-right">
+                                <a href="#services">Services</a>
+                                <a href="#techstack">Tech stack</a>
+                                <a href="#aboutus">About us</a>
+                                <a href="#contact">Contact us</a>
+                            </div>
+                        </div>
+                        <div className="row" id="headerwrap">
                             <div className="intro">
                                 <h1 className="headline">
                                     Global SP Consulting
@@ -35,6 +37,10 @@ class App extends Component {
                                 <div
                                     className="sp-yellow w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
                                     <h4>CONSULTATION ON CAREER</h4>
+                                </div>
+                                <div
+                                    className="sp-yellow w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                                    <h4>ACADEMIC PROJECTS</h4>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +143,7 @@ class App extends Component {
                             </div>
                             <div className="col-lg-3 col-md-6 text-center sp-padding-bottom-25">
                                 <i className="fab fa-aws icon-padding" id="icon"></i>
-                                <p className="icon-padding sp-tech-font">Microsoft .NET</p>
+                                <p className="icon-padding sp-tech-font">AWS</p>
                             </div>
                             <div className="col-lg-3 col-md-6 text-center sp-padding-bottom-25">
                                 <i className="fas fa-database icon-padding" id="icon"></i>
@@ -154,7 +160,7 @@ class App extends Component {
                             <p className="sp-about-text">
                                 Global SP Consulting is an IT service that believes in client satisfaction. We connect
                                 education to technology providing best services in helping students with academic
-                                guidance and proving business qnd technical consultation in the digital world.
+                                guidance and proving business and technical consultation in the digital world.
                             </p>
                         </div>
                     </div>
