@@ -2,8 +2,24 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.container {
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-.header {
+#headerwrap {
+    background-image: url("images/bg6.jpg");
+    text-align: center;
+    background-position: center;
+    min-height: 750px;
+    width: 100%;
+    background-size: cover;
+}
+
+.bg-header {
     background-color: #185771fa;
     height: 60px;
     width: 100%;
@@ -14,6 +30,8 @@ ul#menu {
     padding: 0;
     margin: 0;
     list-style: none;
+    position: fixed;
+    z-index: 1000;
 }
 
 ul#menu li {
@@ -21,6 +39,7 @@ ul#menu li {
     padding: 20px 0 0 0;
     height: 60px;
     box-sizing: border-box;
+    font-weight: 600;
 }
 
 li.site_name {
@@ -48,75 +67,165 @@ li.site_name a:hover, li.link a:hover {
     color: cadetblue;
 }
 
-h1 {
-    padding-top: 10%;
-}
-
-body {
-    background-image: url("images/bg6.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: sans-serif;
-    height:100%;
-    width:100%;
-}
-
 .intro {
-    width: 60%;
+    width: 40%;
+    float: right;
+    padding-top: 5%;
 }
 
 .subintro {
-    width: 40%;
-    float: right;
-    margin-top: 30px;
+    width: 60%;
+    float: left;
+    padding-top: 5%;
+
 }
 
-.subdesc {
-    font-size: 1.5em;
-    font-weight: 200;
-    line-height: 1.333em;
-    margin: 0.12em 0 0 0;
-    color: #000000a6;
-    width: 77.777777778%;
-    font-family: "Times New Roman", Times, serif;
+.sp-display-left {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 45%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%);
+    padding: 10px;
+    margin-top: -100px;
+    padding-left: 10%;
+}
+
+.sp-text-white, .sp-text-white:hover {
+    color: #185771fa !important;
+}
+
+.sp-yellow, .sp-yellow:hover {
+    color: white !important;
+    background-color: #af9a05 !important;
+    margin-bottom: 3px;
+}
+
+.w3-padding-large {
+    padding: 12px 24px !important;
+}
+
+.w3-opacity, .w3-hover-opacity:hover {
+    opacity: 0.80;
+}
+
+.w3-round-large {
+    border-radius: 8px;
+}
+
+.w3-xlarge {
+    font-size: 24px !important;
 }
 
 .headline {
-    font-size: 6em;
-    font-weight: 400;
+    padding-top: 10%;
+    font-size: 4em;
+    font-weight: 300;
     color: black;
-    letter-spacing: -0.042em;
-    line-height: 0.94em;
-    padding-left: 20%;
+    letter-spacing: -0.030em;
     font-family: "Times New Roman", Times, serif;
     margin: 0px;
+    margin-left: -200px;
 }
 
 .tagline {
-    padding-left: 20%;
     font-size: 1.7em;
     font-weight: 200;
-    line-height: 1.333em;
     margin: 0.12em 0 0 0;
     color: #000000a6;
     width: 77.777777778%;
     font-family: "Times New Roman", Times, serif;
 }
 
-div.subdesc a {
+h2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    font-weight: 300;
+    color: black;
+    letter-spacing: -0.030em;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+div.light {
+    border-color: #080808;
+}
+
+#icon{
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 5.0em;
+}
+.icon-padding{
+    padding-left: 15%;
+}
+.icon-desc-padding{
+    padding-left: 30%;
+}
+.icon-para-padding{
+    padding-left: 20%;
+}
+.icon-desc {
+    font-size: 1.7em;
+    font-weight: 600;
+    margin: 0.12em 0 0 0;
+    color: #000000f2;
+    width: 77.777777778%;
+    font-family: "Times New Roman", Times, serif;
+}
+.icon-para {
+    font-size: 1.3em;
+    font-weight: 200;
+    margin: 0.12em 0 0 0;
+    color: #000000de;
+    /* width: 100%; */
+    font-family: "Times New Roman", Times, serif;
+}
+.sp-padding-bottom-5{
+    padding-bottom: 5%;
+}
+.sp-padding-bottom-25{
+    padding-bottom:25px;
+}
+.sp-tech-font{
+    font-weight: 600;
+}
+.sp-about-bg{
+    background-image: url("images/aboutus.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+.sp-about-text{
+    font-size: 1.7em;
+    font-weight: 400;
+    margin: 0.12em 0 0 0;
+    color: #000000f2;
+    font-family: "Times New Roman", Times, serif;
+    width: 30%;
+    margin-left: 30%;
+    padding-top: 70px;
+    text-align: left;
+}
+.sp-contact-text{
+height: 250px;
+}
+#sp-contact-icon{
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 4.0em;
     color: #185771fa;
-    text-decoration: none;
 }
-
-div.subdesc a:hover {
-    color: #07222ded;
+.sp-contact-text{
+    color: black;
+    font-weight: 600;
+    padding-top: 20px;
 }
-
 footer {
     background-color: #185771fa;
     bottom: 0;
@@ -132,52 +241,6 @@ footer {
 
 footer a {
     color: white;
-}
-
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 800px) {
-    .header {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-        text-align: center;
-    }
-    li.link {
-        text-align: center;
-        width: auto;
-    }
-    .intro {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-    h1.headline{    font-size: 2em;
-        width: 100%;
-        font-weight: 300;
-        color: black;
-        text-align: start;
-        margin: 0px;
-        padding-left: 0%;
-        font-family: "Times New Roman", Times, serif;
-    }
-
-    .tagline {
-        padding-left: 1%;
-        font-size: 1.5em;
-        font-weight: 100;
-        color: #000000a6;
-        width: 100%;
-        font-family: "Times New Roman", Times, serif;
-    }
-
-    .subintro {
-        margin-top: 10%;
-        width: 100%;
-        text-align: center;
-    }
-    .footer {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-        text-align: center;
-    }
-    p {
-        word-break: break-word;
-    }
 }
 
 @keyframes App-logo-spin {
