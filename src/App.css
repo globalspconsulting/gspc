@@ -184,6 +184,9 @@ div.light {
     /* width: 100%; */
     font-family: "Times New Roman", Times, serif;
 }
+.sp-icon-color{
+    color: #af9a05;
+}
 .sp-padding-bottom-5{
     padding-bottom: 5%;
 }
@@ -219,7 +222,7 @@ height: 250px;
 #sp-contact-icon{
     text-shadow: 1px 1px 1px #ccc;
     font-size: 4.0em;
-    color: #185771fa;
+    color: #af9a05;
 }
 .sp-contact-text{
     color: black;

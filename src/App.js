@@ -46,7 +46,7 @@ class App extends Component {
                         <hr className="light"/>
                         <div className="row sp-padding-bottom-5">
                             <div className="col-lg-6 col-md-6 text-center">
-                                <i className="fas fa-project-diagram icon-padding" id="icon"></i>
+                                <i className="fas fa-project-diagram icon-padding sp-icon-color" id="icon"></i>
                                 <div className="icon-desc icon-desc-padding">Software Development</div>
                                 <div className="icon-para icon-para-padding">
                                     Web development is most crucial part in the digital world and we are best in
@@ -55,7 +55,7 @@ class App extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 text-center">
-                                <i className="fas fa-balance-scale icon-padding" id="icon"></i>
+                                <i className="fas fa-balance-scale icon-padding sp-icon-color" id="icon"></i>
                                 <div className="icon-desc icon-desc-padding">Software Testing</div>
                                 <div className="icon-para icon-para-padding">
                                     You already have a software and we understand the importance of quality,
@@ -65,7 +65,7 @@ class App extends Component {
                         </div>
                         <div className="row sp-padding-bottom-5">
                             <div className="col-lg-6 col-md-6 text-center">
-                                <i className="fas fa-business-time icon-padding" id="icon"></i>
+                                <i className="fas fa-business-time icon-padding sp-icon-color" id="icon"></i>
                                 <div className="icon-desc icon-desc-padding">Technical Consultation</div>
                                 <div className="icon-para icon-para-padding">
                                     We provide best technical consultation and
@@ -74,7 +74,7 @@ class App extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 text-center">
-                                <i className="fas fa-cogs icon-padding" id="icon"></i>
+                                <i className="fas fa-cogs icon-padding sp-icon-color" id="icon"></i>
                                 <div className="icon-desc icon-desc-padding">Business Consultation</div>
                                 <div className="icon-para icon-para-padding">
                                     With our best research skills we help you with the analytics of current market scope
@@ -84,7 +84,7 @@ class App extends Component {
                         </div>
                         <div className="row sp-padding-bottom-5">
                             <div className="col-lg-6 col-md-6 text-center">
-                                <i className="fas fa-laptop-code icon-padding" id="icon"></i>
+                                <i className="fas fa-laptop-code icon-padding sp-icon-color" id="icon"></i>
                                 <div className="icon-desc icon-desc-padding">Academic Projects</div>
                                 <div className="icon-para icon-para-padding">
                                     We help you with the complete guidance and provide complete support along with
@@ -93,7 +93,7 @@ class App extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 text-center">
-                                <i className="fas fa-book-reader icon-padding" id="icon"></i>
+                                <i className="fas fa-book-reader icon-padding sp-icon-color" id="icon"></i>
                                 <div className="icon-desc icon-desc-padding">Career guidance</div>
                                 <div className="icon-para icon-para-padding">
                                     Completed your under-graduation and not sure how to approach for Masters? We help
@@ -164,7 +164,7 @@ class App extends Component {
                         <h2>Let's Get In Touch!</h2>
                         <hr className="light"/>
                         <div className="row">
-                            <p className="sp-contact-text">
+                            <div className="sp-contact-text">
                                 <div className="col-lg-4 mr-auto text-center">
                                     <i className="fa fa-envelope fa-3x mb-3 " id="sp-contact-icon"></i>
                                     <p className="sp-contact-text">
@@ -182,7 +182,7 @@ class App extends Component {
                                         Philadelphia, PA 19144.
                                     </p>
                                 </div>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </section>
