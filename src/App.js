@@ -1,21 +1,38 @@
 import React, {Component} from 'react';
 import './App.css';
+import ReactDOM from 'react-dom'
+
 
 class App extends Component {
+
     render() {
         return (
             <div className="App">
-                <header  className="responsive-image">
+
+
+                <header className="responsive-image">
                     <div>
-                        <div className="header">
-                            <a href="index.html" className="logo">GSPC</a>
-                            <div className="header-right">
-                                <a href="#services">Services</a>
-                                <a href="#techstack">Tech stack</a>
-                                <a href="#aboutus">About us</a>
-                                <a href="#contact">Contact us</a>
+                        <nav className="navbar navbar-inverse">
+                            <div className="container-fluid">
+                                <div className="navbar-header ">
+                                    <button type="button" className="navbar-toggle" data-toggle="collapse"
+                                            data-target="#myNavbar">
+                                        <span className="icon-bar"></span>
+                                        <span className="icon-bar"></span>
+                                        <span className="icon-bar"></span>
+                                    </button>
+                                    <a className="navbar-brand" href="index.html">GSPC</a>
+                                </div>
+                                <div className="collapse navbar-collapse" id="myNavbar">
+                                    <ul className="nav navbar-nav ">
+                                        <li><a href="#services" className="sptxtcolor">Services</a></li>
+                                        <li><a href="#techstack"  className="sptxtcolor">Tech stack</a></li>
+                                        <li><a href="#aboutus"  className="sptxtcolor">About us</a></li>
+                                        <li><a href="#contact"  className="sptxtcolor">Contact us</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        </nav>
                         <div className="row" id="headerwrap">
                             <div className="intro">
                                 <h1 className="headline">
